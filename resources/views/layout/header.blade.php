@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}"/>
     <title>ادارۃ العلم میں خوش آمدید</title>
     <link rel="icon" type="image/png" href="{{asset("assets/img/logo.png")}}"/>
+
 </head>
 <body>
 <div class="preloader-area">
@@ -40,7 +41,7 @@
     <div class="container">
         <div class="classy-nav-container breakpoint-off">
             <nav class="classy-navbar justify-content-between" id="EduStudyNav">
-                <a class="nav-brand" href="{{ route('home') }}"><img src="{{asset('assets/img/logo.png')}}" width="110" alt="logo"/></a>
+                <a class="nav-brand" href="{{ route('home') }}"><img src="{{asset('assets/img/logo.png')}}" width="120" alt="logo"/></a>
                 <div class="classy-navbar-toggler">
                     <span class="navbarToggler"><span></span><span></span><span></span></span>
                 </div>

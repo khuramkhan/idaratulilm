@@ -13,7 +13,10 @@ class HomeController extends Controller{
     public function aboutUs(){
         return view('about_us');
     }
-    public function contactUs(){
+    public function contactUs(Request $request){
+        if($_POST){
+            dd('submit data');
+        }
         return view('contact');
     }
 

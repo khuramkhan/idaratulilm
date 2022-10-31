@@ -96,12 +96,12 @@
                 </div>
 
                 <div class="col-lg-8 col-md-12">
-                    <form id="contactForm">
+                    <form method="post" action="#" >
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
                                     <label for="name">Name*</label>
-                                    <input type="text" class="form-control" name="name" id="name" required data-error="Please enter your name">
+                                    <input type="text" class="form-control" name="name" required data-error="Please enter your name">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
                                     <label for="email">Email*</label>
-                                    <input type="email" class="form-control" name="email" id="email" required data-error="Please enter your email">
+                                    <input type="email" class="form-control" name="email" required data-error="Please enter your email">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
                                     <label for="number">Phone Number*</label>
-                                    <input type="text" class="form-control" name="number" id="number" required data-error="Please enter your number">
+                                    <input type="text" class="form-control" name="number" required data-error="Please enter your number">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -125,13 +125,13 @@
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
                                     <label for="message">Message*</label>
-                                    <textarea name="message" class="form-control" id="message" cols="30" rows="4" required data-error="Write your message"></textarea>
+                                    <textarea name="message" class="form-control" cols="30" rows="4" required data-error="Write your message"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12">
-                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>

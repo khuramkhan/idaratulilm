@@ -15,7 +15,7 @@ use \App\Http\Controllers\HomeController;
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('about',[HomeController::class,'aboutUs'])->name('about');
-Route::get('contact',[HomeController::class,'contactUs'])->name('contact');
+Route::match(['get', 'post'],'contact',[HomeController::class,'contactUs'])->name('contact');
 Route::get('news',[HomeController::class,'news'])->name('news');
 Route::get('news_detail/{id}',[HomeController::class,'newsDetail'])->name('news_detail');
 Route::get('library',[HomeController::class,'library'])->name('library');
