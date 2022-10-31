@@ -47,7 +47,7 @@
             <div class="main-banner-content">
                 <div class="home-slides">
                     <div class="hero-content">
-                        <img style="width: 350px !important; display: block; margin-left: auto; margin-right: auto;" src="assets/ilm_logo_w.png">
+                        <img style="width: 350px !important; display: block; margin-left: auto; margin-right: auto;" src="{{asset('assets/ilm_logo_w.png')}}">
                         <p>
                             ہمیں فخر ہے الحمدللہ! تمام دینی درساگاہیں اپنے اکابرین سے ملے روایتی نہج کے مطابق، اپنے
                             سائبان وفاق المدارس العربیہ پاکستان کے تحت تعلیمی سفر رواں دواں رکھے ہوئے ہیں۔
@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="hero-content">
-                        <img style="width: 350px !important; display: block; margin-left: auto; margin-right: auto;" src="assets/ilm_logo_w.png">
+                        <img style="width: 350px !important; display: block; margin-left: auto; margin-right: auto;" src="{{asset('assets/ilm_logo_w.png')}}">
                         <p>
                             مدارس کے طلباء میں ہم آہنگی کے فروغ کے لیے ایسا علمی ماحول پیدا کیا جائے جس سے تمام طلباءو
                             فضلاء مستفید ہوسکیں۔

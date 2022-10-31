@@ -29,7 +29,7 @@
             </div>
             <div class="col-lg-4 offset-2 col-md-6" style="text-align: right">
                 <div class="single-footer">
-                    <img src="assets/ilm_logo_w.png">
+                    <img src="{{asset('assets/ilm_logo_w.png')}}">
                     <ul class="footer-contact-info">
                         <li>کیمپس جامع مسجد صدیقیہ 149/Bسیٹلائٹ ٹاؤن، گوجرانوالہ</li>
                         <li><a href="#">+92 308 3435365</a></li>
