@@ -96,7 +96,7 @@
                 </div>
 
                 <div class="col-lg-8 col-md-12">
-                    <form method="post" action="#" >
+                    <form id="contactSubmit" method="post" action="#" >
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="form-group">
@@ -131,7 +131,7 @@
                             </div>
 
                             <div class="col-lg-12 col-md-12">
-                                <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
+                                <button onclick="submitForm()" type="submit" name="submit" class="btn btn-primary">Send Message</button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
@@ -143,6 +143,11 @@
     </section>
     <!-- End Contact Area -->
 
+    <script>
+        function submitForm() {
+            $('#contactSubmit').submit();
+        }
+    </script>
 
 
 @endsection

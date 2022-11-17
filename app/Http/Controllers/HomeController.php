@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\dailyPost;
 use App\Models\NewsModel;
 use Illuminate\Http\Request;
 
@@ -28,6 +29,11 @@ class HomeController extends Controller{
     public function newsDetail($id){
         $news = NewsModel::where('id', $id)->first();
         return view('news_detail', ['news'=> $news]);
+    }
+
+    public function dailyPost(){
+        $news = dailyPost::orderBy('id', 'desc')->get();
+        return view('daily_post', ['dailyPost'=> $news]);
     }
 
     public function library(){

@@ -68,6 +68,10 @@
                                    class="{{Request::url() == route('news') ? 'active' : ''}} m-3">News</a>
                             </li>
                             <li>
+                                <a href="{{ route('daily_post') }}"
+                                   class="{{Request::url() == route('daily_post') ? 'active' : ''}} m-3">Daily post</a>
+                            </li>
+                            <li>
                                 <a href="{{ route('contact') }}"
                                    class="{{Request::url() == route('contact') ? 'active' : ''}} m-3">Contact</a>
                             </li>

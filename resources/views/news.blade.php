@@ -23,7 +23,7 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="single-blog-post">
                                 <img src="{{asset('assets/img/blog-one.jpg')}}" alt="blog" />
-                                <div class="date"><span>May, 2022</span></div>
+                                <div class="date"><span>{{date('d-M-Y', strtotime($n->created_at))}}</span></div>
                                 <div class="blog-post-content">
                                     <h3><a href="#">{{substr($n->title, 0, 50)}}</a></h3>
                                     <p>{{substr($n->detail, 0, 70)}}</p>

@@ -19,3 +19,4 @@ Route::match(['get', 'post'],'contact',[HomeController::class,'contactUs'])->nam
 Route::get('news',[HomeController::class,'news'])->name('news');
 Route::get('news_detail/{id}',[HomeController::class,'newsDetail'])->name('news_detail');
 Route::get('library',[HomeController::class,'library'])->name('library');
+Route::get('daily_post',[HomeController::class,'dailyPost'])->name('daily_post');
