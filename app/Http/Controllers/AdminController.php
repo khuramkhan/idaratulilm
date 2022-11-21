@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller{
@@ -23,6 +25,8 @@ class AdminController extends Controller{
                 $request->file('coverImage')->move(storage_path('app/public'), $imageName);
                 $imageName = $imageName;
                 $data['image'] = $imageName;
+                $data['created_at'] = Carbon::now();
+                $data['updated_at'] = Carbon::now();
             }
             DB::table('daily_post')->insert($data);
 
