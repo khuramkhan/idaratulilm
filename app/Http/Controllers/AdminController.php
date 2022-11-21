@@ -25,6 +25,7 @@ class AdminController extends Controller{
                 $data['image'] = $imageName;
             }
             DB::table('daily_post')->insert($data);
+
             return back()->with('success','Data Created Successfully');
         }
         return view('admin.posts.add');
