@@ -13,9 +13,14 @@ use \App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::match(['get', 'post'],'/admin',[AdminController::class,'posts'])->name('admin');
+Route::match(['get', 'post'],'/admin',[AdminController::class,'login'])->name('admin');
+Route::match(['get', 'post'],'/post',[AdminController::class,'posts'])->name('post');
 Route::match(['get', 'post'],'/add_post',[AdminController::class,'addPost'])->name('addPost');
+Route::match(['get', 'post'],'/delete_post/{id}',[AdminController::class,'deletePost'])->name('deletePost');
+
+Route::get('/view_news',[AdminController::class, 'news'])->name('viewNews');
+Route::match(['get', 'post'],'/add_news',[AdminController::class,'addNews'])->name('addNews');
+Route::match(['get', 'post'],'/delete_news/{id}',[AdminController::class,'deleteNews'])->name('deleteNews');
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('about',[HomeController::class,'aboutUs'])->name('about');

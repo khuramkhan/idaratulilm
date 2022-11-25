@@ -6,7 +6,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title" id="horz-layout-colored-controls">Daily posts</h4>
+                    <h4 class="card-title" id="horz-layout-colored-controls">News</h4>
                 </div>
                 @if (session()->has('success') || session()->has('error'))
                     <div class="alert alert-{{session()->has('success') ? 'success' : 'danger'}}">
@@ -24,15 +24,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($dailyPost as $post)
+                            @foreach ($news as $post)
                                 <tr>
                                     <td>{{$post->title}}</td>
                                     <td>{{$post->detail}}</td>
                                     <td><img src="storage/{{$post->image}}" height="40px"></td>
                                     <td>
-                                        <a class="btn btn-primary btn-sm" href="{{ route('deletePost',['id'=>$post->id]) }}">
-                                            <i class="fas fa-trash">
-                                            </i>
+                                        <a class="btn btn-primary btn-sm" href="{{ route('deleteNews',['id'=>$post->id]) }}">
+                                            <i class="fas fa-trash"></i>
                                             Delete
                                         </a>
                                     </td>

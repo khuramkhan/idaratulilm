@@ -11,16 +11,19 @@
         <div class="navigation-background"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a href="{{url('/')}}"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
-                </li>
+
             </ul>
                 <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                     <li class=" nav-item"><a href="#"><i class="ft-book"></i></i><span class="menu-title" data-i18n="">Posts</span></a>
                         <ul class="menu-content">
-                            </li>
-                                <li class="active"><a class="menu-item" href="{{route('admin')}}">View Posts</a>
-                            </li>
-                            <li class=""><a class="menu-item" href="{{route('addPost')}}">Add Post</a>
+                            <li><li class="{{Request::url() == route('post') ? 'active' : ''}}"><a class="menu-item" href="{{route('post')}}">View Posts</a></li>
+                            <li class="{{Request::url() == route('addPost') ? 'active' : ''}}"><a class="menu-item" href="{{route('addPost')}}">Add Post</a></li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="#"><i class="ft-share"></i></i><span class="menu-title" data-i18n="">News</span></a>
+                        <ul class="menu-content">
+                            <li class="{{Request::url() == route('viewNews') ? 'active' : ''}}"><a class="menu-item" href="{{route('viewNews')}}">View News</a></li>
+                            <li class="{{Request::url() == route('addNews') ? 'active' : ''}}"><a class="menu-item" href="{{route('addNews')}}">Add News</a></li>
                         </ul>
                     </li>
                 </ul>
